@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lancelot&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--esto es para agregar el logo de instagram-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Bootstrap-->
     
     <link rel="stylesheet" href="./css/style.css"> <!-- CSS -->
 
@@ -18,41 +20,82 @@
 <body>
     
     <header>
-       <div class="navbarContainer"> 
-            <nav class="navbar">
-              <img src="./assets/images/logo-alina.png" alt="logo de Alina Bakery">
-             <section class="barra">
-                    <h1><a href="./index.html">ALINA BAKERY</a></h1>
-                   <ul>
-                     <li><a href="./pages/productos.html">Productos</a></li>
-                       <li><a href="./pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                      <li><a href="./pages/acercadeMi.html">Sobre mi</a></li>
-                     <li><a href="./pages/contacto.html">Contacto</a></li>
-                 </ul>
-             </section>
-            </nav>
-        </div>
+        <!--Navbar Bootstrap-->
+
+        <nav class="navbarStyle navbar navbar-expand-md m-2 p-0 fixed-top">
+
+            <div class="container-fluid m-0">
+
+                <a class="navbar-brand p-0 d-flex" href="./index.html">
+
+                    <img src="./assets/images/logo-alina.png" alt="Logo de Alina Bakery" class="d-inline-block logo">
+                    
+                </a>
+
+                <a class="navbar-brand" href="./index.html">
+                  <h1 class="mb-0 p-0 navbar-brand align-text-center textoLogo d-flex align-items-center">ALINA BAKERY</h1>
+                </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbarTexts navbar-nav mb-lg-0 fw-semibold">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/acercadeMi.html">Sobre mí</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+          </nav>
+
     </header>
 
     <main>
         <div class="imagenPrincipal">
             <img src="./assets/images/cookies-2.JPG" alt="cookies">
         </div>
-        <br></br>
+        <br>
         <section class="textos">
             
             <p class="textoResaltado">ENCARGÁ TU PEDIDO Y NOSOTRAS TE LO LLEVAMOS</p>
             <p class="textoResaltado2">¡Envios gratis dentro de Villa Adelina y alrededores!</p>
         </section>
-        <br></br>
+        <br>
         <section class="productos">
             <p>Algunos de nuestros productos:</p>
             
-            <div>
-                <img src="./assets/images/cookie-vainilla.jpeg" alt="Cookies con chips de chocolate">
-                <img src="./assets/images/brownie.jpeg" alt="Brownie">
-                <img src="./assets/images/scons-queso.jpeg" alt="Scons de queso">
-                <img src="./assets/images/tarta-frutilla.jpeg" alt="Tarta de frutilla">
+            <div class="gridProductos">
+                <div class="productoMain">
+                  <img src="./assets/images/cookie-vainilla.jpeg" alt="Cookies con chips de chocolate">
+                </div>
+                <div class="productoMain">
+                  <img src="./assets/images/brownie.jpeg" alt="Brownie">
+                </div>
+                <div class="productoMain">
+                  <img src="./assets/images/scons-queso.jpeg" alt="Scons de queso">
+                </div>
+                <div class="productoMain">
+                  <img src="./assets/images/tarta-frutilla.jpeg" alt="Tarta de frutilla">
+                </div>
             </div>
 
             <a href="./pages/productos.html">VER TODOS NUESTROS PRODUCTOS</a>
@@ -67,7 +110,7 @@
             </a>           
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -11,50 +11,117 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--esto es para agregar el logo de instagram-->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Bootstrap-->
+
     <link rel="stylesheet" href="../css/style.css"> <!-- CSS -->
+
     <title>Productos - Alina Bakery</title>
 </head>
 <body>
     <header>
-        <div class="navbarContainer"> 
-            <nav class="navbar">
-              <img src="../assets/images/logo-alina.png" alt="logo de Alina Bakery">
-             <section class="barra">
-                    <h1><a href="../index.html">ALINA BAKERY</a></h1>
-                   <ul>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a href="./acercadeMi.html">Sobre mi</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                 </ul>
-             </section>
-            </nav>
-        </div>
+        <!--Navbar Bootstrap-->
+        <nav class="navbarStyle navbar navbar-expand-md m-2 p-0 fixed-top">
+            <div class="container-fluid m-0">
+
+                <a class="navbar-brand p-0 d-flex" href="../index.html">
+                    <img src="../assets/images/logo-alina.png" alt="Logo de Alina Bakery" class="d-inline-block logo">
+                </a>
+
+                <a class="navbar-brand" href="../index.html">
+                    <h1 class="mb-0 p-0 navbar-brand align-text-center textoLogo d-flex align-items-center">ALINA BAKERY</h1>
+                </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbarTexts navbar-nav mb-lg-0 fw-semibold">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./acercadeMi.html">Sobre mí</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contacto.html">Contacto</a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+        </nav>
     </header>
+
     <main>
+
+        <h1 class="textos textoResaltado4 imagenPrincipal">Nuestros productos</h1>
         <div class="productosEspecifico">
-            <h1 style="padding: 20px"; class="textoResaltado4 imagenPrincipal">Nuestros productos</h1>
-            <h2 class="textos textoResaltado5">Budines (800g) - $7000.-</h2><br>
-            <p class="textos textoResaltado2">Limón - Banana y chips - Vainilla y chips - Chocolate - Naranja</p>
-            <img src="../assets/images/budin4.jpeg" alt="budin">
-            <hr>
-            <h2 class="textos textoResaltado5">Cookies - 6 Unidades - $7500.-</h2><br>
-            <p class="textos textoResaltado2">Vainilla con chips de chocolate - Red Velvet - Oreo - Chocolate - Rellenas de dulce de leche</p>
-            <img src="../assets/images/cookies-cafe.jpeg" alt="cookies">
-            <hr>
-            <h2 class="textos textoResaltado5">Torta brownie - $20000.-</h2><br>
-            <p class="textos textoResaltado2">Con dulce de leche y crema</p>
-            <img src="../assets/images/brownie-ddl.jpeg" alt="Torta brownie con dulce de leche y crema">
-            <hr>
-            <h2 class="textos textoResaltado5">Scons de queso - $6000.-</h2><br>
-            <p class="textos textoResaltado2">(6 unidades)</p>
-            <img src="../assets/images/scons-queso.jpeg" alt="Scons de queso">
-            <hr>
-            <h2 class="textos textoResaltado5">Tarta de masa sablé - $18000.-</h2><br>
-            <p class="textos textoResaltado2">Rellena de dulce de leche o con frutas y crema</p>
-            <img src="../assets/images/tarta-frutilla.jpeg" alt="Tarta de masa sable con relleno de frutillas y crema">
+            <div class="tarjetaProducto">
+              <h2 class="textos textoResaltado5">Budines (800g)</h2>
+              <p class="textos textoResaltado5">$7000</p>
+              <ul class="textos textoResaltado2">
+                <li>Limón</li>
+                <li>Banana y chips</li>
+                <li>Vainilla y chips</li>
+                <li>Chocolate</li>
+                <li>Naranja</li>
+              </ul>
+              <a class="m-2 p-2 btn botonCompra" href="./contacto.html#formulario" role="button">Comprar</a>
+              <img src="../assets/images/budin4.jpeg" alt="budin">
+              
+            </div>
+
+            <div class="tarjetaProducto">
+              <h2 class="textos textoResaltado5">Cookies (6 Unidades)</h2>
+              <p class="textoResaltado5">$7500</p>
+              <ul class="textos textoResaltado2">
+                <li>Vainilla con chips de chocolate</li>
+                <li>Red Velvet</li>
+                <li>Oreo</li>
+                <li>Chocolate</li>
+                <li>Rellenas de dulce de leche</li>
+              </ul>
+              <a class="m-2 p-2 btn botonCompra" href="./contacto.html#formulario" role="button">Comprar</a>
+              <img src="../assets/images/cookies-cafe.jpeg" alt="cookies">
+            </div>
+
+            <div class="tarjetaProducto">
+              <h2 class="textos textoResaltado5">Torta brownie</h2>
+              <p class="textoResaltado5">$20000.-</p>
+              <p class="textos textoResaltado2">Con dulce de leche y crema</p>
+              <a class="m-2 p-2 btn botonCompra" href="./contacto.html#formulario" role="button">Comprar</a>
+              <img src="../assets/images/brownie-ddl.jpeg" alt="Torta brownie con dulce de leche y crema">
+            </div>
+
+            <div class="tarjetaProducto">
+              <h2 class="textos textoResaltado5">Scons de queso</h2>
+              <p class="textoResaltado5">(6 unidades)</p>
+              <p class="textos textoResaltado5">$6000.-</p>
+              <a class="m-2 p-2 btn botonCompra" href="./contacto.html#formulario" role="button">Comprar</a>
+              <img src="../assets/images/scons-queso.jpeg" alt="Scons de queso">
+            </div>
+
+            <div class="tarjetaProducto">
+              <h2 class="textos textoResaltado5">Tarta de masa sablé</h2>
+              <p class="textos textoResaltado5">$18000.-</p>
+              <p class="textos textoResaltado2">Rellena de dulce de leche o con frutas y crema</p>
+              <a class="m-2 p-2 btn botonCompra" href="./contacto.html#formulario" role="button">Comprar</a>
+              <img src="../assets/images/tarta-frutilla.jpeg" alt="Tarta de masa sable con relleno de frutillas y crema">
+            </div>
         </div>
     </main>
+
     <footer>
         <div class="containerFooter">
             <p>Seguinos en Instagram!</p>
@@ -63,5 +130,8 @@
             </a>           
         </div>
     </footer>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
 </html>

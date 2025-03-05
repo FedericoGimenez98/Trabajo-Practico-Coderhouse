@@ -11,35 +11,67 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--esto es para agregar el logo de instagram-->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Bootstrap-->
+
     <link rel="stylesheet" href="../css/style.css"> <!-- CSS -->
     <title>Contacto - Alina Bakery</title>
 </head>
 <body>
     <header>
-        <div class="navbarContainer"> 
-            <nav class="navbar">
-              <img src="../assets/images/logo-alina.png" alt="logo de Alina Bakery">
-             <section class="barra">
-                    <h1><a href="../index.html">ALINA BAKERY</a></h1>
-                   <ul>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                    <li><a href="./acercadeMi.html">Sobre mi</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                 </ul>
-             </section>
-            </nav>
-        </div>
+        <!--Navbar Bootstrap-->
+        <nav class="navbarStyle navbar navbar-expand-md m-2 p-0 fixed-top">
+            <div class="container-fluid m-0">
+
+                <a class="navbar-brand p-0 d-flex" href="../index.html">
+                    <img src="../assets/images/logo-alina.png" alt="Logo de Alina Bakery" class="d-inline-block logo">
+                </a>
+
+                <a class="navbar-brand" href="../index.html">
+                    <h1 class="mb-0 p-0 navbar-brand align-text-center textoLogo d-flex align-items-center">ALINA BAKERY</h1>
+                </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbarTexts navbar-nav mb-lg-0 fw-semibold">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./acercadeMi.html">Sobre mí</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contacto.html">Contacto</a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+        </nav>
     </header>
     <main>
         <h1 class="textoResaltado4 imagenPrincipal">Contacto</h1>
-        <br>
+
         <h2 class="imagenPrincipal textoResaltado2">ALINA BAKERY</h2>
         <br><hr><br>
         <div class="textos textoResaltado3">
-            <h3>Dónde estamos:</h3><br>
+            <h3>Dónde estamos:</h3>
             <p>Rivera esq. Verduga, Villa Adelina, 1607, Partido de San Isidro, Buenos Aires, Argentina.</p> <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.924173450004!2d-58.553748030361405!3d-34.51057289831171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb081c02e31dd%3A0x9d37b5e5db3088f1!2sJos%C3%A9%20Mar%C3%ADa%20Verduga%20%26%20Rivera%2C%20B1607%20Villa%20Adelina%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1738524778560!5m2!1ses-419!2sar" width="600" height="450" style="border:10;" allowfullscreen="n" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.924173450004!2d-58.553748030361405!3d-34.51057289831171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb081c02e31dd%3A0x9d37b5e5db3088f1!2sJos%C3%A9%20Mar%C3%ADa%20Verduga%20%26%20Rivera%2C%20B1607%20Villa%20Adelina%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1738524778560!5m2!1ses-419!2sar"  style="border:10;" allowfullscreen="n" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
         <br>
         <div class="textos textoResaltado3">
@@ -47,7 +79,7 @@
             <p>Lunes a Viernes de 9 a 18 hs. Sabados de 9 a 13 hs.</p>
         </div>
         <br><hr><br>
-        <section class="formulario">
+        <section class="formulario" id="formulario">
             <p class="textos textoResaltado3">En caso de que quieras contactarnos, ya sea por un encargo, o por alguna sugerencia y/o queja, completando el formulario de consulta con tus datos nos pondremos en contacto a la brevedad.
             </p>
             <form action="" method="">
@@ -87,5 +119,6 @@
             </a>           
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
