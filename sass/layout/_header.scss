@@ -1,0 +1,26 @@
+@use "../variables" as v;
+
+.logo {
+    display: flex;
+    border-radius: 100px;
+    height: 60px;
+    margin: 10px;
+}
+.textoLogo {
+    font-family: v.$fuente-secundaria;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navbarStyle {
+    background-color: v.$color-principal;
+    border-radius: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.navbarTexts{
+    font-family: v.$fuente-principal;
+    font-size: 0.8rem;
+}
+.nav-link:hover{
+    color:#00000081 !important;
+    scale: 1.05;
+}

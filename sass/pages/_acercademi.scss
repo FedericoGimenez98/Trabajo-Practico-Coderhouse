@@ -1,0 +1,17 @@
+@use "../mixins";
+
+.expandir {
+    @extend %flex-center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin: 20px 0;
+        width: 80%;
+        max-width: 600px;
+    }
+}

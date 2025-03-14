@@ -1,0 +1,42 @@
+@use "variables" as v;
+@use "./mixins";
+
+.textos{
+    display: block;
+    justify-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.textoResaltado{
+    @include mixins.fuentes("Roboto Serif",30px,700);
+    text-shadow: 2px 2px 4px #ff6a03;
+}
+.textoResaltado2{
+    @include mixins.fuentes("Roboto Serif",20px,500);
+    color: #7C7C7C;
+}
+.textoResaltado3{
+    @include mixins.fuentes("Roboto Serif",20px,500);
+    color: #000000;
+}
+.textoResaltado4{
+    @include mixins.fuentes("Roboto Serif",50px,700);
+    text-shadow: 2px 2px 4px #ff6a03;
+    padding: 20px;
+}
+.textoResaltado5{
+    @include mixins.fuentes("Roboto Serif",1.5rem,700);
+}
+
+.textosIzquierda{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    font-family: v.$fuente-principal;
+}

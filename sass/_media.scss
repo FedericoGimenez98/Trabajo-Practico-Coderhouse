@@ -1,0 +1,51 @@
+@media (min-width: 320px) and (max-width: 430px) {
+    main{
+        margin:10px 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        border-radius: 100px;
+        height: 40px;
+        margin: 10px;
+    }
+    .textoLogo {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .textoResaltado{
+        font-size: 20px;
+    }
+    .textoResaltado2{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .textoResaltado4{
+        font-size: 30px;
+    }
+    .productos p{
+        font-size: 10px;      
+     }
+    .productos a{
+        font-size: small;
+    }
+    .gridProductos{
+        display:flex;
+        flex-direction: column;
+    }
+    .productoMain{
+        border-width: 0.1rem;
+        border-radius: 1rem;
+        padding: 0;
+        height: auto;
+        margin: 0;
+    }
+    .productosEspecifico{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}

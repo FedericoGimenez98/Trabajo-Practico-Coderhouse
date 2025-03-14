@@ -1,0 +1,17 @@
+@use "reset";
+
+@use "variables" as v;
+@use "mixins";
+
+@use "./layout/header";
+@use "./layout/main";
+@use "./layout/footer";
+
+@use "./pages/index";
+@use "./pages/productos";
+@use "./pages/contacto";
+@use "./pages/acercademi";
+
+
+@use "media";
+@use "textos";

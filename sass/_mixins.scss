@@ -1,0 +1,21 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%boton-estilo {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+    transition: all 0.3s ease-in-out; 
+}
+
+@mixin fuentes($familia, $tamanio, $peso) {
+    font-family: $familia, serif;
+    font-size: $tamanio;
+    font-weight: $peso;
+}
