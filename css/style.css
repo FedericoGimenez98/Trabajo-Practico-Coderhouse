@@ -1,3 +1,4 @@
+@import 'animate.css';
 * {
   margin: 0;
   padding: 0;
@@ -165,12 +166,16 @@ hr {
 }
 
 .tarjetaProducto {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #ffffff;
   border-radius: 2rem;
   padding: 1rem 0.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
 }
 .tarjetaProducto ul {
   list-style: none;
@@ -180,7 +185,36 @@ hr {
   width: 90%;
   border-radius: 1rem;
 }
+.tarjetaProducto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 23%, rgba(255, 106, 3, 0.57) 100%);
+  background-position: bottom;
+  opacity: 0;
+  z-index: -1;
+}
+.tarjetaProducto:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.562);
+}
+.tarjetaProducto:hover::before {
+  animation: colorFondo 0.5s forwards;
+}
 
+@keyframes colorFondo {
+  0% {
+    opacity: 0;
+    background-position: bottom;
+  }
+  100% {
+    opacity: 1;
+    background-position: top;
+  }
+}
 .botonCompra {
   background-color: rgba(255, 108, 3, 0.6352941176);
   font-family: "Roboto Serif", serif;
@@ -193,6 +227,8 @@ hr {
 .botonCompra:hover {
   scale: 1.05;
   background-color: #ff6a03;
+  animation: tada;
+  animation-duration: 1s;
 }
 
 .mapa {
@@ -256,6 +292,11 @@ hr {
   padding: 12px;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+  transition: all 0.3s ease-in-out;
+}
+.formulario form input[type=submit]:hover {
+  scale: 1.02;
 }
 
 .expandir {
