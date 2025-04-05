@@ -36,7 +36,7 @@ body {
 
 .textoLogo {
   font-family: "Lancelot", serif;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 5vw, 2rem);
   cursor: pointer;
 }
 
@@ -151,6 +151,7 @@ hr {
   font-weight: 800;
   color: black;
   text-decoration: none;
+  font-size: clamp(15px, 4vw, 30px);
 }
 
 .botonProductos:hover {
@@ -326,9 +327,52 @@ hr {
     height: 40px;
     margin: 10px;
   }
-  .textoLogo {
-    font-size: 1.2rem;
-    cursor: pointer;
+  .textoResaltado {
+    font-size: 20px;
+  }
+  .textoResaltado2 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .textoResaltado4 {
+    font-size: 30px;
+  }
+  .productos p {
+    font-size: 10px;
+  }
+  .productosEspecifico {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .productosEspecifico img {
+    max-width: 500px;
+  }
+  .gridProductos {
+    display: flex;
+    flex-direction: column;
+  }
+  .productoMain {
+    border-width: 0.1rem;
+    border-radius: 1rem;
+    padding: 0;
+    height: auto;
+    max-width: 350px;
+    margin: auto;
+  }
+}
+@media (min-width: 431px) and (max-width: 767px) {
+  main {
+    margin: 10px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
+    border-radius: 100px;
+    height: 40px;
+    margin: 10px;
   }
   .textoResaltado {
     font-size: 20px;
@@ -343,8 +387,13 @@ hr {
   .productos p {
     font-size: 10px;
   }
-  .productos a {
-    font-size: small;
+  .productosEspecifico {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .productosEspecifico img {
+    max-width: 500px;
   }
   .gridProductos {
     display: flex;
@@ -355,12 +404,8 @@ hr {
     border-radius: 1rem;
     padding: 0;
     height: auto;
-    margin: 0;
-  }
-  .productosEspecifico {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    max-width: 350px;
+    margin: auto;
   }
 }
 .textos {

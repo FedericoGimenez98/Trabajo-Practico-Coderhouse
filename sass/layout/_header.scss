@@ -8,7 +8,7 @@
 }
 .textoLogo {
     font-family: v.$fuente-secundaria;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 5vw, 2rem);
     cursor: pointer;
 }
 .navbarStyle {
