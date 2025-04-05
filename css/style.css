@@ -137,7 +137,7 @@ hr {
 
 .productos p {
   font-family: "Roboto Serif", serif;
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 500;
   color: black;
 }
@@ -162,8 +162,13 @@ hr {
 .productosEspecifico {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
+  justify-items: center;
+  padding: 1rem;
+}
+.productosEspecifico img {
+  max-width: 100%;
+  height: auto;
 }
 
 .tarjetaProducto {
@@ -327,26 +332,8 @@ hr {
     height: 40px;
     margin: 10px;
   }
-  .textoResaltado {
-    font-size: 20px;
-  }
   .textoResaltado2 {
-    font-size: 15px;
     margin-bottom: 0;
-  }
-  .textoResaltado4 {
-    font-size: 30px;
-  }
-  .productos p {
-    font-size: 10px;
-  }
-  .productosEspecifico {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .productosEspecifico img {
-    max-width: 500px;
   }
   .gridProductos {
     display: flex;
@@ -359,6 +346,9 @@ hr {
     height: auto;
     max-width: 350px;
     margin: auto;
+  }
+  .productosEspecifico {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 431px) and (max-width: 767px) {
@@ -374,26 +364,8 @@ hr {
     height: 40px;
     margin: 10px;
   }
-  .textoResaltado {
-    font-size: 20px;
-  }
   .textoResaltado2 {
-    font-size: 15px;
     margin-bottom: 0;
-  }
-  .textoResaltado4 {
-    font-size: 30px;
-  }
-  .productos p {
-    font-size: 10px;
-  }
-  .productosEspecifico {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .productosEspecifico img {
-    max-width: 500px;
   }
   .gridProductos {
     display: flex;
@@ -407,6 +379,14 @@ hr {
     max-width: 350px;
     margin: auto;
   }
+  .productosEspecifico {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .productosEspecifico {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .textos {
   display: block;
@@ -419,14 +399,14 @@ hr {
 
 .textoResaltado {
   font-family: "Roboto Serif", serif;
-  font-size: 30px;
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
   font-weight: 700;
   text-shadow: 2px 2px 4px #ff6a03;
 }
 
 .textoResaltado2 {
   font-family: "Roboto Serif", serif;
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 500;
   color: #7C7C7C;
 }
@@ -440,7 +420,7 @@ hr {
 
 .textoResaltado4 {
   font-family: "Roboto Serif", serif;
-  font-size: 50px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   text-shadow: 2px 2px 4px #ff6a03;
   padding: 20px;
@@ -448,7 +428,7 @@ hr {
 
 .textoResaltado5 {
   font-family: "Roboto Serif", serif;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   font-weight: 700;
 }
 

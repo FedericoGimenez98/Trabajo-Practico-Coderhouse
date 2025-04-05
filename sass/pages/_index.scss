@@ -29,7 +29,7 @@
 }
 
 .productos p{
-    @include mixins.fuentes("Roboto Serif",20px,500);
+    @include mixins.fuentes("Roboto Serif",clamp(1rem, 2vw, 1.2rem),500);
     color: black;
 }
 

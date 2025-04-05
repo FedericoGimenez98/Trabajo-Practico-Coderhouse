@@ -10,11 +10,11 @@
     text-align: center;
 }
 .textoResaltado{
-    @include mixins.fuentes("Roboto Serif",30px,700);
+    @include mixins.fuentes("Roboto Serif",clamp(1.3rem, 2.5vw, 2rem),700);
     text-shadow: 2px 2px 4px #ff6a03;
 }
 .textoResaltado2{
-    @include mixins.fuentes("Roboto Serif",20px,500);
+    @include mixins.fuentes("Roboto Serif",clamp(1rem, 2vw, 1.2rem),500);
     color: #7C7C7C;
 }
 .textoResaltado3{
@@ -22,12 +22,12 @@
     color: #000000;
 }
 .textoResaltado4{
-    @include mixins.fuentes("Roboto Serif",50px,700);
+    @include mixins.fuentes("Roboto Serif",clamp(2rem, 5vw, 3.5rem),700);
     text-shadow: 2px 2px 4px #ff6a03;
     padding: 20px;
 }
 .textoResaltado5{
-    @include mixins.fuentes("Roboto Serif",1.5rem,700);
+    @include mixins.fuentes("Roboto Serif",clamp(1.2rem, 2.5vw, 1.6rem),700);
 }
 
 .textosIzquierda{

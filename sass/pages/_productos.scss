@@ -1,11 +1,17 @@
 
 
-.productosEspecifico{
+.productosEspecifico {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
-}
+    justify-items: center;
+    padding: 1rem;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 .tarjetaProducto{
     position: relative;
     display: flex;
